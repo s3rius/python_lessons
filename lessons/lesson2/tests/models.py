@@ -8,7 +8,7 @@ class SumFractionsTestData:
 
     first: str
     second: str
-    answer: float
+    answer: str
 
 
 @dataclass

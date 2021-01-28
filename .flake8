@@ -109,49 +109,6 @@ per-file-ignores =
   ; Found wrong magic comment
   WPS400,
 
-  ; all models
-  models.py:
-  ; too few type annotations
-  TAE001,
-  ; Found nested class
-  WPS431,
-  ; Found magic number
-  WPS432,
-  ; Found shadowed class attribute
-  WPS601,
-  ; Missing parameter(s) in Docstring
-  DAR101,
-  ; Missing "Returns" in Docstring
-  DAR201,
-
-  ; all serializers
-  serializers.py:
-  ; Found magic number
-  WPS432,
-
-  ; utils
-  utils.py:
-  ; Found wrong module name
-  WPS100,
-
-  ; helpers
-  helpers.py:
-  ; Found wrong module name
-  WPS100,
-
-  ; configs
-  config.py:
-  ; Found magic number
-  WPS432,
-
-  ; settings
-  settings.py:
-  ; Found mutable module constant
-  WPS407,
-  ; Found extra indentation
-  WPS318,
-
-
 exclude =
   ./.git,
   ./venv,

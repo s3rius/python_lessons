@@ -1,7 +1,7 @@
 from typing import List
 
 
-def sum_fractions(val_a: str, val_b: str) -> float:
+def sum_fractions(val_a: str, val_b: str) -> str:
     """
     Sum two fraction numbers.
 
@@ -11,9 +11,9 @@ def sum_fractions(val_a: str, val_b: str) -> float:
 
     :param val_a: first fraction.
     :param val_b: second fraction.
-    :return: sum result.
+    :return: sum result in string format like "a/b".
     """
-    return 0.0  # Your code goes here.
+    return "a/b"  # Your code goes here.
 
 
 def find_fibonacci_in_list(input_list: List[int]) -> List[int]:
