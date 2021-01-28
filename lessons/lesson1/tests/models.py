@@ -1,7 +1,17 @@
-from pydantic.main import BaseModel
+from dataclasses import dataclass
+from typing import Optional
 
 
-class EuclidTestData(BaseModel):
+@dataclass
+class MinEvenNumberTestData:
+    """Classwork task tests."""
+
+    number: int
+    answer: Optional[int]
+
+
+@dataclass
+class EuclidTestData:
     """GCD test data format."""
 
     val_a: int
@@ -9,7 +19,8 @@ class EuclidTestData(BaseModel):
     answer: int
 
 
-class FactorialTestData(BaseModel):
+@dataclass
+class FactorialTestData:
     """Factorial test data format."""
 
     number: int

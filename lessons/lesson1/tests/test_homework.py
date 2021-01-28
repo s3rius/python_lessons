@@ -1,6 +1,6 @@
 import pytest
 
-from lessons.lesson1.main import euclid, factorial
+from lessons.lesson1.homework import euclid, factorial
 from lessons.lesson1.tests.models import EuclidTestData, FactorialTestData
 
 euclid_data = [
