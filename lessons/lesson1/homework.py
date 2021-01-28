@@ -10,7 +10,7 @@ def euclid(val_a: int, val_b: int) -> int:
     :param val_b: второе число больше нуля.
     :return: НОД чисел a и b.
     """
-    ...  # Write your solution here.
+    return 0  # Write your solution here.
 
 
 def factorial(number: int) -> int:
@@ -22,4 +22,4 @@ def factorial(number: int) -> int:
     :param number: число больше или равное нулю.
     :return: факториал числа a.
     """
-    ...  # Write your solution here.
+    return 0  # Write your solution here.
