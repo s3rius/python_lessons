@@ -6,7 +6,7 @@ def matrix_addition(
     matrix_b: List[List[int]],
 ) -> List[List[int]]:
     """
-    Sum of two matrices.
+    Sum of two square matrices with equal dimensions.
 
     This is very common task.
     You can find more info about algorithm here:
@@ -24,7 +24,7 @@ def matrix_multiplication(
     matrix_b: List[List[int]],
 ) -> List[List[int]]:
     """
-    Multiplication of two matrices.
+    Multiplication of two square matrices with equal dimensions.
 
     This is very common task either.
     You can find more info about algorithm here:
