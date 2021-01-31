@@ -29,8 +29,8 @@ def factorial(number: int) -> int:
     :param number: число больше или равное нулю.
     :return: факториал числа a.
     """
-    b = 1
+    result = 1
     while number >= 1:
-        b = b * number
+        result = result * number
         number = number - 1
-    return b
+    return result
