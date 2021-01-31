@@ -25,3 +25,12 @@ class DecimalToBinary:
 
     thought: int
     message: str
+
+
+@dataclass
+class HammingDistance:
+    """Test data for hamming_distance."""
+
+    first_dna: str
+    second_dna: str
+    distance: int
