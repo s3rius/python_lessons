@@ -1,4 +1,20 @@
+from math import gcd
 from typing import List
+
+
+def nok(val_a: int, val_b: int) -> int:
+    """
+    Подсчет значения НОК.
+
+    Используя формулу НОК (м,н) = (м*н)/НОД (м,н).
+    Высчитывает общий занаменатель.
+
+    :param val_a: 1 аргумент
+    :param val_b: 2 аргумент
+    :return: НОК
+    """
+
+    return (val_a * val_b) // gcd(val_a, val_b)
 
 
 def sum_fractions(val_a: str, val_b: str) -> str:
@@ -13,7 +29,14 @@ def sum_fractions(val_a: str, val_b: str) -> str:
     :param val_b: second fraction.
     :return: sum result in string format like "a/b".
     """
-    return "a/b"  # Your code goes here.
+    num1, denum1 = val_a.split("/")
+    num2, denum2 = val_b.split("/")
+
+    denum = nok(int(denum1), int(denum2))
+    num1 = (denum // int(denum1)) * int(num1)
+    num2 = (denum // int(denum2)) * int(num2)
+    num = num1 + num2
+    return str(num) + "/" + str(denum)
 
 
 def find_fibonacci_in_list(input_list: List[int]) -> List[int]:
