@@ -1,37 +1,58 @@
-from typing import List
-
-
-def matrix_addition(
-    matrix_a: List[List[int]],
-    matrix_b: List[List[int]],
-) -> List[List[int]]:
+def dec_to_binary(
+    thought: int,
+) -> str:
     """
-    Sum of two square matrices with equal dimensions.
+    Convert integer to binary string.
 
-    This is very common task.
-    You can find more info about algorithm here:
-    http://www.cleverstudents.ru/matrix/operations_on_matrices.html#addition
+    Let's talk as a computers. Your task is to convert
+    computer's thoughts (integer value) into the
+    computer message in binary format (str).
+    The "Binary" means that your message have only 1s and 0s.
 
-    :param matrix_a: first matrix.
-    :param matrix_b: second matrix.
-    :return: resulting matrix.
+    Your function must work as the following:
+    >>> message = dec_to_binary(339)
+    >>> print(message)
+    >>> "101010011"
+
+    :param thought: thought is a number >= 0.
+    :return: binary string.
     """
-    return [[]]
+    return ""  # Write your solution here.
 
 
-def matrix_multiplication(
-    matrix_a: List[List[int]],
-    matrix_b: List[List[int]],
-) -> List[List[int]]:
+def hamming_distance(
+    first_dna: str,
+    second_dna: str,
+) -> int:
     """
-    Multiplication of two square matrices with equal dimensions.
+    Calculate hamming distance.
 
-    This is very common task either.
-    You can find more info about algorithm here:
-    http://www.cleverstudents.ru/matrix/operations_on_matrices.html#matrix_multiplication
+    Your body is made up of cells that contain DNA.
+    Those cells regularly wear out and need replacing,
+    which they achieve by dividing into daughter cells.
+    In fact, the average human body experiences about 10 quadrillion
+    cell divisions in a lifetime!
 
-    :param matrix_a: first matrix.
-    :param matrix_b: second matrix.
-    :return: resulting matrix.
+    When cells divide, their DNA replicates too.
+    Sometimes during this process mistakes happen and single pieces
+    of DNA get encoded with the incorrect information.
+    If we compare two strands of DNA and count the differences between
+    them we can see how many mistakes occurred.
+    This is known as the "Hamming Distance".
+
+    The Hamming Distance is useful for lots of things in science,
+    not just biology, so it's a nice phrase to be familiar with :)
+    We read DNA using the letters C,A,G and T.
+    Two strands might look like this:
+    first_dna:  "GAGCCTACTAACGGGAT"
+    second_dna: "CATCGTAATGACGGCCT"
+    difference:  ^ ^ ^  ^ ^    ^^
+
+    They have 7 differences, and therefore the Hamming Distance is 7
+    and you must return 7.
+
+    :param first_dna: dna sequence with length > 0.
+    :param second_dna: dna sequence with length > 0.
+    :return: hamming distance.
     """
-    return []
+    return 0  # Write your solution here.

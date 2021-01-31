@@ -20,9 +20,8 @@ class FibonacciFinderTestData:
 
 
 @dataclass
-class MatrixOperationTestData:
-    """Test data for matrix operations functions."""
+class DecimalToBinary:
+    """Test data for computer translator."""
 
-    first: List[List[int]]
-    second: List[List[int]]
-    answer: List[List[int]]
+    thought: int
+    message: str
