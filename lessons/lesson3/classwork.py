@@ -16,7 +16,12 @@ def acronym(sentence: str) -> str:
     :param sentence: Sentence with more than one word.
     :return: sentence's acronym.
     """
-    return ""
+    acron = sentence[0]
+    for index in range(len(sentence)):
+        if sentence[index] == " ":
+            acron += sentence[index + 1]
+
+    return acron.upper()
 
 
 def anagram(word: str, candidates: List[str]) -> List[str]:
@@ -36,7 +41,13 @@ def anagram(word: str, candidates: List[str]) -> List[str]:
     :param candidates: possible candidates.
     :return: List of anagrams
     """
-    return []
+    answer = list()
+    sort_word = sorted(word)
+    for candidate in candidates:
+        if sort_word == sorted(candidate):
+            answer.append(candidate)
+
+    return answer
 
 
 def rotational_cipher(command: str) -> str:
@@ -62,4 +73,7 @@ def rotational_cipher(command: str) -> str:
     :param command: rotation command with ROT index > 0.
     :return: cipher
     """
+
+
+
     return ""
