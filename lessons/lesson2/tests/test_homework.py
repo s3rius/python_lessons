@@ -15,6 +15,11 @@ hamming_data = [
         first_dna="GAGCCTACTAACGGGAT",
         second_dna="CATCGTAATGACGGCCT",
         distance=7
+    ),
+    HammingDistance(
+        first_dna="GACC",
+        second_dna="GCACCT",
+        distance=4
     )
 ]
 
