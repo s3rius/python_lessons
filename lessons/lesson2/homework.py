@@ -17,7 +17,11 @@ def dec_to_binary(
     :param thought: thought is a number >= 0.
     :return: binary string.
     """
-    return ""  # Write your solution here.
+    message = ""
+    while thought > 0:
+        message = str(thought % 2) + message
+        thought = thought // 2
+    return message
 
 
 def hamming_distance(
@@ -55,4 +59,11 @@ def hamming_distance(
     :param second_dna: dna sequence with length > 0.
     :return: hamming distance.
     """
-    return 0  # Write your solution here.
+    max_dna = max(len(first_dna), len(second_dna))
+    min_dna = min(len(first_dna), len(second_dna))
+    distance = max_dna - min_dna
+    for index in range(min_dna):
+        if first_dna[index] != second_dna[index]:
+            distance += 1
+
+    return distance
