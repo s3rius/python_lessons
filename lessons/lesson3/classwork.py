@@ -28,7 +28,7 @@ def anagram(word: str, candidates: List[str]) -> List[str]:
     select the sublist of anagrams of the given word.
 
     Example:
-    >>> answer = anagram("listen", ["enlists" "google" "inlets" "banana"])
+    >>> answer = anagram("listen", ["enlists", "google", "inlets", "banana"])
     >>> assert answer == ["inlets"]
 
 
