@@ -38,15 +38,19 @@ anagram_data = [
 cipher_data = [
     CesarTestData(
         command="ROT11 Knowing what must be done does away with fear",
-        answer="zcdlxcv lwpi bjhi qt sdct sdth plpn lxiw utpg",
+        answer="vyzhtyr hsle xfde mp ozyp ozpd lhlj htes qplc",
     ),
     CesarTestData(
         command="ROT22 A journey of a thousand miles begins with a single step",
-        answer="e nsyvric sj e xlsywerh qmpiw fikmrw amxl e wmrkpi wxit",
+        answer="w fkqnjau kb w pdkqowjz iehao xacejo sepd w oejcha opal",
     ),
     CesarTestData(
         command="ROT444 Many receive advice only the wise profit from it",
-        answer="kylw pcacgtc ybtgac mljw rfc ugqc npmdgr dpmk gr",
+        answer="ocpa tgegkxg cfxkeg qpna vjg ykug rtqhkv htqo kv",
+    ),
+    CesarTestData(
+        command="ROT13 abcdefghijklmnopqrstuvwxyz",
+        answer="nopqrstuvwxyzabcdefghijklm",
     ),
 ]
 

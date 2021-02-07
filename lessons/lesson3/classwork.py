@@ -74,6 +74,12 @@ def rotational_cipher(command: str) -> str:
     :return: cipher
     """
 
-
-
-    return ""
+    rot, message = command.split(" ", 1)
+    rot = int(rot[3:])
+    cipher = ""
+    for letter in message.lower():
+        if letter == " ":
+            cipher += letter
+        else:
+            cipher += chr((ord(letter) + rot - ord("a")) % 26 + ord("a"))
+    return cipher

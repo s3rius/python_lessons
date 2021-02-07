@@ -7,20 +7,14 @@ decimal_to_bin_data = [
     DecimalToBinary(thought=5, message="101"),
     DecimalToBinary(thought=32, message="100000"),
     DecimalToBinary(thought=405, message="110010101"),
-    DecimalToBinary(thought=10889, message="10101010001001")
+    DecimalToBinary(thought=10889, message="10101010001001"),
 ]
 
 hamming_data = [
     HammingDistance(
-        first_dna="GAGCCTACTAACGGGAT",
-        second_dna="CATCGTAATGACGGCCT",
-        distance=7
+        first_dna="GAGCCTACTAACGGGAT", second_dna="CATCGTAATGACGGCCT", distance=7
     ),
-    HammingDistance(
-        first_dna="GACC",
-        second_dna="GCACCT",
-        distance=4
-    )
+    HammingDistance(first_dna="GACC", second_dna="GCACCT", distance=4),
 ]
 
 
