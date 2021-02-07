@@ -16,6 +16,9 @@ wemake-python-styleguide = { version = "^0.14.1", optional = true }
 [tool.poetry.extras]
 flake = ["flake8", "wemake-python-styleguide"]
 
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.10.1"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
