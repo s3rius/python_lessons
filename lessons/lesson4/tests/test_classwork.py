@@ -37,6 +37,12 @@ def test_delete_last():
   assert l.head.next == None
   assert l.head.value == 4
 
+def test_append():
+  l = list_to_linked([1,2])
+  l.append(Node(44))
+  assert len(l) == 3
+  assert l.head.next.next.value == 44
+
 def test_reverse():
   l = list_to_linked([3,2,1])
   l.reverse()
