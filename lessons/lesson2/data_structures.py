@@ -37,4 +37,4 @@ class Stack(Generic[T]):
         return self.mas.pop(len(self) - 1)
 
     def __len__(self) -> int:
-      return len(self.mas)
+        return len(self.mas)
