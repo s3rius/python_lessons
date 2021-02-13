@@ -20,8 +20,8 @@ class LinkedList:
         node = self.head
         while index != 0:
             node = node.next
-            index -=1
-        return node.value 
+            index -= 1
+        return node.value
 
     def append(self, node: Node):
         ...
